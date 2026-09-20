@@ -14,6 +14,7 @@ const footerGroups = [
   {
     title: 'Support',
     links: [
+      { label: 'Download the app', to: '/download' },
       { label: 'FAQ', to: '/faq' },
       { label: 'Permissions', to: '/docs#permissions' },
       { label: 'Uploads', to: '/docs#uploads' },

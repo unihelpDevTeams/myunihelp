@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { ArrowRight, Menu, X } from 'lucide-react'
+import { ArrowDownToLine, Menu, X } from 'lucide-react'
 import logo from '../../assets/images/logo.png'
 
 const navItems = [
@@ -11,7 +11,7 @@ const navItems = [
   { label: 'Terms', to: '/terms' },
 ]
 
-const ctaTarget = '/docs'
+const ctaTarget = '/download'
 
 const scrollToHash = (hash) => {
   if (!hash) return
@@ -67,8 +67,8 @@ const Navbar = () => {
           onClick={() => handleNavClick(ctaTarget)}
           className="hidden items-center gap-2 rounded-full bg-slate-950 px-5 py-3 text-sm font-bold text-white shadow-xl shadow-indigo-950/10 transition duration-300 hover:-translate-y-0.5 hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-4 md:inline-flex"
         >
-          Open Docs
-          <ArrowRight size={16} aria-hidden="true" />
+          Download App
+          <ArrowDownToLine size={16} aria-hidden="true" />
         </Link>
 
         <button
@@ -89,7 +89,7 @@ const Navbar = () => {
       >
         <div className="mx-3 overflow-hidden rounded-3xl border border-slate-200 bg-white/95 p-2 shadow-2xl shadow-slate-950/15 backdrop-blur-xl">
           <div className={`grid gap-1 transition duration-300 ${isOpen ? 'translate-y-0 opacity-100' : '-translate-y-3 opacity-0'}`}>
-            {[...navItems, { label: 'Open Docs', to: ctaTarget, cta: true }].map((item) => (
+            {[...navItems, { label: 'Download App', to: ctaTarget, cta: true }].map((item) => (
               <Link
                 key={item.label}
                 to={item.to}
@@ -99,7 +99,7 @@ const Navbar = () => {
                 }`}
               >
                 {item.label}
-                {item.cta && <ArrowRight size={18} aria-hidden="true" />}
+                {item.cta && <ArrowDownToLine size={18} aria-hidden="true" />}
               </Link>
             ))}
           </div>

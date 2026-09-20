@@ -6,6 +6,7 @@ import FAQ from './pages/FAQ/FAQ'
 import Home from './pages/Home/Home'
 import Privacy from './pages/Legal/Privacy'
 import Terms from './pages/Legal/Terms'
+import Download from './pages/Download/Download'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/docs" element={<Docs />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/download" element={<Download />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
         </Routes>
