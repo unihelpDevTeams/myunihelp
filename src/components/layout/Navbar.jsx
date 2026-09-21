@@ -65,8 +65,7 @@ const Navbar = () => {
         <Link
           to={ctaTarget}
           onClick={() => handleNavClick(ctaTarget)}
-          className="hidden items-center gap-2 rounded-full bg-slate-950 px-5 py-3 text-sm font-bold text-white shadow-xl shadow-indigo-950/10 transition duration-300 hover:-translate-y-0.5 hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-4 md:inline-flex"
-        >
+          className="hidden items-center gap-2 rounded-full bg-slate-950 px-5 py-3 text-sm font-bold text-white shadow-xl shadow-indigo-950/10 transition duration-300 hover:-translate-y-0.5 hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-4 md:inline-flex">
           Download App
           <ArrowDownToLine size={16} aria-hidden="true" />
         </Link>

@@ -1,4 +1,5 @@
 import {
+  ArrowDownToLine,
   ArrowRight,
   BookOpen,
   Brain,
@@ -79,10 +80,11 @@ const Hero = () => {
               <ArrowRight size={17} aria-hidden="true" />
             </Link>
             <Link
-              to="/docs#features"
+              to="/download"
               className="inline-flex min-h-[52px] w-full items-center justify-center rounded-full border border-slate-200 bg-white px-7 py-3 text-sm font-bold text-slate-900 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-indigo-200 hover:text-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 motion-reduce:transform-none sm:w-auto"
             >
-              View Features
+              Download App
+          <ArrowDownToLine size={16} aria-hidden="true" />
             </Link>
           </div>
 
