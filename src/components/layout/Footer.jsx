@@ -24,6 +24,7 @@ const footerGroups = [
     title: 'Legal',
     links: [
       { label: 'Privacy Policy', to: '/privacy' },
+      { label: 'Delete account', to: '/delete-account' },
       { label: 'Terms', to: '/terms' },
     ],
   },

@@ -8,6 +8,7 @@ const navItems = [
   { label: 'Docs', to: '/docs' },
   { label: 'FAQ', to: '/faq' },
   { label: 'Privacy', to: '/privacy' },
+  { label: 'Delete account', to: '/delete-account' },
   { label: 'Terms', to: '/terms' },
 ]
 

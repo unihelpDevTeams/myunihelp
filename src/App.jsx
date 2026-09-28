@@ -6,6 +6,7 @@ import FAQ from './pages/FAQ/FAQ'
 import Home from './pages/Home/Home'
 import Privacy from './pages/Legal/Privacy'
 import Terms from './pages/Legal/Terms'
+import DeleteAccount from './pages/Legal/DeleteAccount'
 import Download from './pages/Download/Download'
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/download" element={<Download />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/delete-account" element={<DeleteAccount />} />
         </Routes>
         <Footer />
       </div>
