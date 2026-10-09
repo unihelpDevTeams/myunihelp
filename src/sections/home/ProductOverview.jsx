@@ -1,9 +1,9 @@
 import { BookOpen, Calculator, CheckCircle2, Compass, MessagesSquare, ShoppingBag, Trophy } from 'lucide-react'
 
 const categories = [
-  { name: 'Learn', text: 'Notes, past questions and academic resources.', icon: BookOpen, tone: 'bg-indigo-50 text-indigo-700' },
-  { name: 'Calculate', text: 'GPA, CGPA and practical study tools.', icon: Calculator, tone: 'bg-violet-50 text-violet-700' },
-  { name: 'Connect', text: 'Student conversations and community spaces.', icon: MessagesSquare, tone: 'bg-sky-50 text-sky-700' },
+  { name: 'Learn', text: 'Notes, past questions, tutorials and AI study help.', icon: BookOpen, tone: 'bg-indigo-50 text-indigo-700' },
+  { name: 'Calculate', text: 'GPA, CGPA, CBT practice and study planning tools.', icon: Calculator, tone: 'bg-violet-50 text-violet-700' },
+  { name: 'Connect', text: 'Student groups, friend requests and direct messages.', icon: MessagesSquare, tone: 'bg-sky-50 text-sky-700' },
   { name: 'Discover', text: 'Campus updates, services and useful information.', icon: Compass, tone: 'bg-emerald-50 text-emerald-700' },
   { name: 'Compete', text: 'Challenges, streaks and achievement moments.', icon: Trophy, tone: 'bg-amber-50 text-amber-700' },
   { name: 'Buy & Sell', text: 'A student-focused marketplace experience.', icon: ShoppingBag, tone: 'bg-rose-50 text-rose-700' },

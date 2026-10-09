@@ -3,7 +3,7 @@ import { permissionInventory, privacyCategories, serviceProviders } from '../../
 
 const useItems = [
   'Create and manage your UniHelp account.',
-  'Provide study tools, uploads, community, messaging, marketplace, hostels, stories, notifications and support.',
+  'Provide study tools, AI study assistance, uploads, community, messaging, marketplace, hostels, tutorials, stories, notifications and support.',
   'Process Premium access and marketplace promotion payments.',
   'Save offline learning materials and study progress when you use supported features.',
   'Improve account safety and help complete account deletion requests.',

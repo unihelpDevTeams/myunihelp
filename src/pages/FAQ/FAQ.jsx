@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: 'What does Premium include?',
-    answer: 'Premium includes offline learning access, voice messages, study downloads, a higher AI response limit, reduced ads, higher hostel and product upload limits, and selected early-access benefits.',
+    answer: 'Premium includes the Offline Learning Library, past-question and lecture-note downloads, voice messages, a verified student badge, a higher AI response limit, reduced ads, higher hostel and product upload limits, and early access to new tools.',
   },
   {
     question: 'How much does Premium cost?',
@@ -27,7 +27,19 @@ const faqs = [
   },
   {
     question: 'Can I upload study resources?',
-    answer: 'You can upload lecture notes as PDF files. Past-question contribution options may appear where UniHelp makes them available.',
+    answer: 'You can contribute lecture notes as PDFs and upload supported past-question file types. You can also request notes or past questions from the student community.',
+  },
+  {
+    question: 'What can I do with AI Study Help?',
+    answer: 'Choose Solve, Explain, Summarize, Practice, Study Plan or Research, then provide the question, notes, topic or goals you want help with. AI responses are for learning support, so review them carefully.',
+  },
+  {
+    question: 'How do message requests work?',
+    answer: 'You can send friend requests, receive message requests from other students and accept or decline a request. You can also block or unblock students from the profile or conversation flow.',
+  },
+  {
+    question: 'Can I use UniHelp without an internet connection?',
+    answer: 'Premium members can download supported notes and past questions in the Offline Learning Library. Other features may require an internet connection.',
   },
   {
     question: 'What are the upload limits?',

@@ -160,7 +160,7 @@ const Docs = () => {
             inverse
             eyebrow="Premium"
             title="Premium plans and benefits"
-            text="Upgrade when you want offline study access, higher limits and additional communication features."
+            text="Upgrade for offline study downloads, a higher AI response limit, a verified student badge and Premium voice messages."
           />
           <div className="mt-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
             <div className="rounded-lg border border-white/10 bg-white/5 p-6">

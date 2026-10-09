@@ -4,7 +4,7 @@ import { premiumDetails, sponsorshipDetails, uploadRules } from '../../data/prod
 const termsSections = [
   {
     title: 'Using UniHelp',
-    text: 'UniHelp is designed to support students with study tools, resources, community features, marketplace listings, hostels, stories, messages and support. Use the app responsibly and follow all applicable school, platform and community rules.',
+    text: 'UniHelp is designed to support students with study tools, AI study assistance, resources, community features, marketplace listings, hostels, tutorials, stories, messages and support. Use the app responsibly and follow all applicable school, platform and community rules.',
   },
   {
     title: 'Your account',
@@ -16,7 +16,7 @@ const termsSections = [
   },
   {
     title: 'Content you upload or share',
-    text: 'Only upload or share content you own or have permission to use. This includes notes, documents, photos, stories, comments, messages, listings, reports, suggestions and profile media.',
+    text: 'Only upload or share content you own or have permission to use. This includes notes, documents, tutorial videos, photos, stories, comments, messages, listings, reports, suggestions and profile media.',
   },
   {
     title: 'Academic integrity',
