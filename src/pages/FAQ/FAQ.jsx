@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: 'What does Premium include?',
-    answer: 'Premium includes the Offline Learning Library, past-question and lecture-note downloads, voice messages, a verified student badge, a higher AI response limit, reduced ads, higher hostel and product upload limits, and early access to new tools.',
+    answer: 'Premium includes the Offline Learning Library, past-question and lecture-note downloads, a verified student badge, a higher AI response limit, reduced ads, higher hostel and product upload limits, and early access to new tools.',
   },
   {
     question: 'How much does Premium cost?',
@@ -30,12 +30,32 @@ const faqs = [
     answer: 'You can contribute lecture notes as PDFs and upload supported past-question file types. You can also request notes or past questions from the student community.',
   },
   {
+    question: 'What study and planning tools are in the app?',
+    answer: 'UniHelp includes lecture notes and past questions, Formula Hub and flashcards, CBT practice, GPA/CGPA tracking, task planning, Smart Schedule and a Pomodoro focus timer. AI Study Help offers additional support for coursework and revision.',
+  },
+  {
     question: 'What can I do with AI Study Help?',
-    answer: 'Choose Solve, Explain, Summarize, Practice, Study Plan or Research, then provide the question, notes, topic or goals you want help with. AI responses are for learning support, so review them carefully.',
+    answer: 'Choose a help mode or upload a PDF, then ask about a question, topic, notes or study goal. UniHelp AI supports learning; review answers carefully and verify important facts.',
+  },
+  {
+    question: 'Which AI model powers UniHelp AI?',
+    answer: 'UniHelp identifies the assistant as UniHelp AI. We do not provide verified details here about the underlying model or its training data.',
   },
   {
     question: 'How do message requests work?',
     answer: 'You can send friend requests, receive message requests from other students and accept or decline a request. You can also block or unblock students from the profile or conversation flow.',
+  },
+  {
+    question: 'Can I switch between Chats and Groups?',
+    answer: 'Yes. On the website, open Connect and use the Chats and Groups tabs to switch views. Group conversations and direct chats remain separate.',
+  },
+  {
+    question: 'Can I view chat photos, videos and files without leaving the website?',
+    answer: 'Yes. Open an attachment from a chat to view it in the in-page viewer. Photos and videos also show a preview in the conversation before you open them.',
+  },
+  {
+    question: 'What is the Campus Feed?',
+    answer: 'The Campus Feed lets you browse student posts and, where available, create text, photo or background posts, choose an audience, react, comment, share and report content.',
   },
   {
     question: 'Can I use UniHelp without an internet connection?',

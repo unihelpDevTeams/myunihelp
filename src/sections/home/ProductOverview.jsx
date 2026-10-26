@@ -1,12 +1,14 @@
-import { BookOpen, Calculator, CheckCircle2, Compass, MessagesSquare, ShoppingBag, Trophy } from 'lucide-react'
+import { BookOpen, CalendarCheck, Calculator, CheckCircle2, Compass, MessagesSquare, Newspaper, ShoppingBag, Trophy } from 'lucide-react'
 
 const categories = [
-  { name: 'Learn', text: 'Notes, past questions, tutorials and AI study help.', icon: BookOpen, tone: 'bg-indigo-50 text-indigo-700' },
-  { name: 'Calculate', text: 'GPA, CGPA, CBT practice and study planning tools.', icon: Calculator, tone: 'bg-violet-50 text-violet-700' },
-  { name: 'Connect', text: 'Student groups, friend requests and direct messages.', icon: MessagesSquare, tone: 'bg-sky-50 text-sky-700' },
-  { name: 'Discover', text: 'Campus updates, services and useful information.', icon: Compass, tone: 'bg-emerald-50 text-emerald-700' },
-  { name: 'Compete', text: 'Challenges, streaks and achievement moments.', icon: Trophy, tone: 'bg-amber-50 text-amber-700' },
-  { name: 'Buy & Sell', text: 'A student-focused marketplace experience.', icon: ShoppingBag, tone: 'bg-rose-50 text-rose-700' },
+  { name: 'Learn', text: 'Lecture notes, past questions, tutorials, Formula Hub and AI study help.', icon: BookOpen, tone: 'bg-indigo-50 text-indigo-700' },
+  { name: 'Plan', text: 'Tasks, Smart Schedule and a Pomodoro focus timer.', icon: CalendarCheck, tone: 'bg-violet-50 text-violet-700' },
+  { name: 'Practice', text: 'CBT quizzes, flashcards and GPA/CGPA tracking.', icon: Calculator, tone: 'bg-fuchsia-50 text-fuchsia-700' },
+  { name: 'Connect', text: 'Switch between direct chats and student groups in one website area.', icon: MessagesSquare, tone: 'bg-sky-50 text-sky-700' },
+  { name: 'Campus Feed', text: 'Share and discover student posts, photos and campus updates.', icon: Newspaper, tone: 'bg-emerald-50 text-emerald-700' },
+  { name: 'Discover', text: 'Explore announcements, hostels and campus information.', icon: Compass, tone: 'bg-cyan-50 text-cyan-700' },
+  { name: 'Compete', text: 'Daily challenges, streaks, leaderboards and rewards.', icon: Trophy, tone: 'bg-amber-50 text-amber-700' },
+  { name: 'Buy & Sell', text: 'Student marketplace listings, purchases and learning tutorials.', icon: ShoppingBag, tone: 'bg-rose-50 text-rose-700' },
 ]
 
 const ProductOverview = () => {
@@ -16,12 +18,12 @@ const ProductOverview = () => {
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div className="max-w-xl">
             <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-indigo-600">Product Overview</p>
-            <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">One app. Many parts of student life.</h2>
+            <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">Study, plan and connect in one student app.</h2>
             <p className="mt-5 text-base leading-8 text-slate-600">
-              UniHelp is designed as a practical mobile companion for the moments students repeat every week: studying, tracking academic progress, finding support, joining conversations and exploring campus life.
+              UniHelp brings together study materials, AI assistance, CBT practice, academic tracking, planning tools, student communities and campus services.
             </p>
             <div className="mt-8 grid gap-3">
-              {['Academic tools and learning resources in one flow', 'Community, marketplace and campus discovery built around students', 'A focused mobile experience that can grow with the product'].map((item) => (
+              {['Find notes and past questions, use Formula Hub and get AI study help', 'Plan tasks and study sessions, or practice with CBT and flashcards', 'Switch between Chats and Groups, follow the Campus Feed and explore student listings'].map((item) => (
                 <div key={item} className="flex gap-3 text-sm font-semibold leading-6 text-slate-700">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-indigo-600" aria-hidden="true" />
                   <span>{item}</span>

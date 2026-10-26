@@ -72,10 +72,30 @@ const Docs = () => {
               </span>
             ))}
           </div>
+          <nav aria-label="Product guide sections" className="mt-8">
+            <p className="text-sm font-bold text-slate-600">Jump to a guide</p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {[
+                { label: 'Features', href: '#features' },
+                { label: 'Privacy', href: '#privacy' },
+                { label: 'Permissions', href: '#permissions' },
+                { label: 'Premium', href: '#premium' },
+                { label: 'Uploads & account safety', href: '#uploads' },
+              ].map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="inline-flex min-h-10 items-center rounded-full border border-slate-200 bg-white px-4 text-sm font-bold text-slate-700 transition hover:border-indigo-300 hover:text-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </div>
+          </nav>
         </div>
       </section>
 
-      <section id="features" className="bg-white py-16 sm:py-24">
+      <section id="features" className="scroll-mt-24 bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
             eyebrow="Features"
@@ -108,7 +128,7 @@ const Docs = () => {
         </div>
       </section>
 
-      <section id="privacy" className="bg-slate-50 py-16 sm:py-24">
+      <section id="privacy" className="scroll-mt-24 bg-slate-50 py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
             eyebrow="Privacy"
@@ -138,7 +158,7 @@ const Docs = () => {
         </div>
       </section>
 
-      <section id="permissions" className="bg-white py-16 sm:py-24">
+      <section id="permissions" className="scroll-mt-24 bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeader eyebrow="Permissions" title="Device access you may be asked for" />
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -154,13 +174,13 @@ const Docs = () => {
         </div>
       </section>
 
-      <section id="premium" className="bg-slate-950 py-16 text-white sm:py-24">
+      <section id="premium" className="scroll-mt-24 bg-slate-950 py-16 text-white sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
             inverse
             eyebrow="Premium"
             title="Premium plans and benefits"
-            text="Upgrade for offline study downloads, a higher AI response limit, a verified student badge and Premium voice messages."
+            text="Upgrade for offline study downloads, a higher AI response limit, a verified student badge and higher marketplace upload limits."
           />
           <div className="mt-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
             <div className="rounded-lg border border-white/10 bg-white/5 p-6">
@@ -199,7 +219,7 @@ const Docs = () => {
         </div>
       </section>
 
-      <section id="uploads" className="bg-white py-16 sm:py-24">
+      <section id="uploads" className="scroll-mt-24 bg-white py-16 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <div>
             <SectionHeader eyebrow="Uploads" title="Supported files and sizes" />

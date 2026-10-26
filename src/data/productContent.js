@@ -1,8 +1,8 @@
 export const guideIntro = {
   title: 'UniHelp product guide',
   subtitle:
-    'Learn how UniHelp helps students study, connect, manage campus life and get support from one mobile app.',
-  badges: ['Account setup', 'Study tools', 'AI study help', 'Messaging', 'Community', 'Marketplace', 'Premium'],
+    'A practical guide to UniHelp’s study tools, AI assistance, student community, campus feed, marketplace and account controls.',
+  badges: ['Study resources', 'AI study help', 'CBT practice', 'Planning tools', 'Chats & groups', 'Campus feed', 'Marketplace', 'Premium'],
 }
 
 export const featureGroups = [
@@ -21,18 +21,19 @@ export const featureGroups = [
   },
   {
     title: 'Study Tools',
-    summary: 'Find learning resources, practice with CBT, track grades and organize your study time.',
+    summary: 'Find learning resources, practice with CBT and flashcards, track grades and plan your study time.',
     features: [
       'Browse, search and filter lecture notes, past questions and tutorials.',
       'Upload lecture notes as PDF documents.',
       'Find past questions by school, course, year, exam type, semester, department and level.',
       'Request lecture notes or past questions from the student community.',
-      'Use Formula Hub for subjects, formula details, flashcards and bookmarks.',
+      'Use Formula Hub to browse subjects and formulas, review flashcards and save bookmarks.',
       'Track GPA and CGPA records for your semesters.',
-      'Practice with CBT, and organize your work with tasks, a smart timetable and a focus timer.',
+      'Practice with CBT mock exams and quizzes.',
+      'Organize assignments and deadlines with Tasks, plan study sessions with Smart Schedule, and focus with the Pomodoro timer.',
       'Save resources for quick access and download supported notes and past questions for offline study with Premium.',
     ],
-    data: 'Study tools may store resource requests and uploads, course details, GPA/CGPA records, bookmarks and study progress.',
+    data: 'Study tools may store resource requests and uploads, course details, GPA/CGPA records, bookmarks, tasks, schedules and study progress.',
     access: 'Signed-in students can use the main study features. Offline downloads require Premium.',
   },
   {
@@ -41,11 +42,11 @@ export const featureGroups = [
     features: [
       'Choose Solve, Explain, Summarize, Practice, Study Plan or Research.',
       'Provide a question, topic, notes or study goals to guide the response.',
-      'Attach supported files when a feature allows it.',
+      'Connect a PDF and ask questions, request summaries, generate quiz questions or clarify topics from its text.',
       'View remaining AI usage where the app shows a usage limit.',
       'Premium provides a higher AI response limit.',
     ],
-    data: 'AI study help uses the questions, notes, attachments and study context you provide to generate responses.',
+    data: 'AI study help processes the questions, notes, extracted PDF text and study context you submit to generate a response. Avoid sharing sensitive personal information, and verify important academic answers.',
     access: 'AI study help is available to signed-in users.',
   },
   {
@@ -64,19 +65,21 @@ export const featureGroups = [
   },
   {
     title: 'Community & Messages',
-    summary: 'Join student groups, connect with friends and manage direct-message requests and conversations.',
+    summary: 'Connect with students in direct chats and groups. On the website, Chats and Groups are available together in the Connect area.',
     features: [
       'Join and participate in student groups.',
       'Create groups and manage group settings where you have permission.',
+      'On the website, switch between Chats and Groups with the tabs at the top of the Connect screen.',
       'Find students, send friend requests and review incoming message requests.',
       'Open direct conversations, see typing indicators and manage message requests.',
       'Reply to messages, use quick reactions, and edit or delete your own messages.',
-      'Send stickers; Premium members can record and send voice messages.',
+      'Send stickers and record and send voice messages.',
+      'View photo and video previews in chat, then open media in the in-app viewer. Supported documents can be previewed without leaving the website.',
       'Block or unblock students and report problems when needed.',
       'Receive app notifications for important community updates and new activity.',
     ],
-    data: 'Community features may store profiles, groups, posts, message requests, replies, reactions, voice notes, stickers, typing activity, friend connections, blocks and notifications.',
-    access: 'Community and messaging features require a signed-in account. Voice messages are a Premium benefit.',
+    data: 'Community features may store profiles, groups, group posts, direct messages, attachment files, message requests, replies, reactions, voice notes, stickers, typing activity, friend connections, blocks, reports and notifications.',
+    access: 'Community and messaging features, including voice messages, require a signed-in account. Microphone access is only needed when you choose to record a voice message.',
   },
   {
     title: 'Marketplace & Hostels',
@@ -95,15 +98,17 @@ export const featureGroups = [
   },
   {
     title: 'Stories, News & Announcements',
-    summary: 'Share stories, keep up with campus updates and follow activity in the student feed.',
+    summary: 'Share stories, follow campus updates and take part in the student feed.',
     features: [
       'Read stories from the story feed.',
       'Create stories and chapters from your account.',
       'Add story covers, summaries, genres and content.',
       'Like, bookmark and comment on stories where available.',
-      'View announcements, education news and posts in the feed.',
+      'Browse campus feed posts, including text, photo and background posts.',
+      'Choose a post audience where available, and like, comment on, share or report posts.',
+      'View announcements and education news.',
     ],
-    data: 'Feed and story features may store posts, saved stories, published stories, covers, comments, likes and bookmarks.',
+    data: 'Feed and story features may store post text and images, audience settings, comments, likes, reports, saved stories, published stories, covers and bookmarks.',
     access: 'Reading and browsing may be available in app areas; creating and managing your own content requires sign-in.',
   },
   {
@@ -206,7 +211,6 @@ export const premiumDetails = {
   providers: ['Card or supported online checkout', 'Google Play subscriptions on Android'],
   benefits: [
     'Offline Learning Library',
-    'Voice messages in chat',
     'Past-question and lecture-note downloads',
     'Verified student badge',
     'Higher AI response limit',

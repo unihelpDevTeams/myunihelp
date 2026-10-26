@@ -10,7 +10,7 @@ const CampusTag = ({ children }) => (
 const previewRows = [
   { icon: BookOpen, title: 'Academic resources', text: 'Lecture notes, past questions and formula tools' },
   { icon: ShoppingBag, title: 'Campus marketplace', text: 'Student listings, hostels, reviews and sponsorship' },
-  { icon: Lock, title: 'Premium benefits', text: 'Offline library, voice messages and higher upload limits' },
+  { icon: Lock, title: 'Premium benefits', text: 'Offline library and higher upload limits' },
   { icon: CircleCheck, title: 'Privacy choices', text: 'Clear information about account data and permissions' },
 ]
 
