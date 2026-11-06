@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
+import RouteSEO from './components/seo/RouteSEO'
 import Docs from './pages/Docs/Docs'
 import FAQ from './pages/FAQ/FAQ'
 import Home from './pages/Home/Home'
@@ -13,6 +14,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="min-h-screen overflow-x-hidden bg-white text-slate-950">
+        <RouteSEO />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

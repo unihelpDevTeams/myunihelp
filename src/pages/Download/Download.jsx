@@ -6,7 +6,6 @@ import {
   Check,
   ChevronDown,
   Search,
-  ShieldCheck,
   ShoppingBag,
   Smartphone,
   Sparkles,
