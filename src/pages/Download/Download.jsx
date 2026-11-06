@@ -5,7 +5,6 @@ import {
   BookOpen,
   Check,
   ChevronDown,
-  Download as DownloadIcon,
   Search,
   ShieldCheck,
   ShoppingBag,
@@ -15,7 +14,7 @@ import {
 } from 'lucide-react'
 
 const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.zenithdev.unihelp'
-const apkUrl = 'https://expo.dev/artifacts/eas/XH3G5jnM6V6nBysql_o7Kxsn7MkTovMH4BeMV5mNKd4.apk'
+const webAppUrl = 'https://myunihelp.com.ng'
 
 const benefits = [
   'Study tools, AI help and community features in one place',
@@ -30,24 +29,18 @@ const features = [
   { icon: ShoppingBag, title: 'Marketplace', text: 'Find what other students are selling, and sell what you no longer need.' },
 ]
 
-const steps = [
-  { title: 'Download the APK', text: 'Tap Download APK. Your browser may ask you to confirm the download.' },
-  { title: 'Allow the install', text: 'Open the file. If Android asks, allow installs from the app you used to download it.' },
-  { title: 'Open UniHelp', text: 'Tap Install, then Open. UniHelp will be on your home screen and in your app drawer.' },
-]
-
 const faqs = [
   {
-    q: 'Should I choose the APK or Google Play?',
-    a: 'Google Play is the easiest option if your phone supports it, because updates arrive automatically. The APK is a good choice if Play is not available on your phone or you would rather install directly.',
+    q: 'Can I use UniHelp without installing the app?',
+    a: 'Yes. Choose Continue with web to use UniHelp in your browser.',
   },
   {
-    q: 'Why does Android show a warning when I open the APK?',
-    a: 'Android warns you about any app installed from outside Google Play. If you downloaded the APK from this page, you can continue with the install.',
+    q: 'Can I still install the Android app?',
+    a: 'Yes. Use the Google Play option on supported Android devices.',
   },
   {
-    q: 'How do I update UniHelp after installing the APK?',
-    a: 'Come back to this page, download the latest APK and install it over your current version. Installs from Google Play update on their own.',
+    q: 'Will my account work on the web and mobile app?',
+    a: 'Sign in with the same UniHelp account to access your profile and synced features.',
   },
 ]
 
@@ -181,13 +174,13 @@ const Download = () => {
               Your campus life, in your pocket.
             </h1>
             <p className="mt-6 max-w-xl text-base leading-7 text-indigo-100/80 sm:text-lg sm:leading-8">
-              Download UniHelp for faster access to study tools, student communities, marketplace finds and the support you need on campus.
+              Continue with UniHelp in your browser, or install the Android app from Google Play.
             </p>
 
             <div ref={heroCtaRef} className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <a href={apkUrl} download rel="noopener" className={primaryBtn}>
-                <DownloadIcon size={20} aria-hidden="true" />
-                Download APK
+              <a href={webAppUrl} target="_blank" rel="noreferrer" className={primaryBtn}>
+                <ArrowUpRight size={20} aria-hidden="true" />
+                Continue with web
               </a>
               <a href={playStoreUrl} target="_blank" rel="noreferrer" className={secondaryBtn}>
                 <ArrowUpRight size={20} aria-hidden="true" />
@@ -195,7 +188,7 @@ const Download = () => {
               </a>
             </div>
             <p className="mt-4 text-sm leading-6 text-indigo-200/70">
-              Android only. Get the APK directly, or use Google Play on supported devices.
+              Use UniHelp on the web or continue to Google Play on a supported Android device.
             </p>
           </div>
 
@@ -240,36 +233,6 @@ const Download = () => {
         </div>
       </section>
 
-      {/* Install steps */}
-      <section className="border-y border-slate-200 bg-slate-50 py-16 sm:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="max-w-2xl text-3xl font-black tracking-tight text-slate-950 sm:text-4xl [text-wrap:balance]">
-            Install the APK in three steps.
-          </h2>
-
-          <ol className="mt-10 grid gap-8 md:grid-cols-3 md:gap-10">
-            {steps.map((step, index) => (
-              <li key={step.title} className="flex gap-4 md:block">
-                <span className="grid h-11 w-11 flex-none place-items-center rounded-full bg-indigo-600 text-lg font-black text-white">
-                  {index + 1}
-                </span>
-                <div className="md:mt-5">
-                  <h3 className="text-lg font-black text-slate-950">{step.title}</h3>
-                  <p className="mt-2 max-w-sm text-sm leading-6 text-slate-600">{step.text}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
-
-          <div className="mt-12 flex gap-3 rounded-2xl border border-indigo-200 bg-indigo-50 p-4 text-sm leading-6 text-indigo-950 sm:p-5">
-            <ShieldCheck className="mt-0.5 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-            <p>
-              Only install UniHelp from this page or from Google Play. Android may show a warning for apps installed outside Play, which is expected for APK files.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ */}
       <section className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
@@ -295,14 +258,14 @@ const Download = () => {
       <section className="relative overflow-hidden bg-indigo-950 py-16 text-white sm:py-24">
         <div className="pointer-events-none absolute -right-24 -top-28 h-72 w-72 rounded-full border-[30px] border-indigo-400/10" aria-hidden="true" />
         <div ref={endCtaRef} className="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-black tracking-tight sm:text-5xl [text-wrap:balance]">Get UniHelp on your phone.</h2>
+          <h2 className="text-3xl font-black tracking-tight sm:text-5xl [text-wrap:balance]">Continue with UniHelp.</h2>
           <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-indigo-100/80 sm:text-lg">
-            Study tools, student communities and the campus marketplace, all in one app.
+            Open the web app now, or get UniHelp from Google Play on a supported Android device.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
-            <a href={apkUrl} download rel="noopener" className={primaryBtn}>
-              <DownloadIcon size={20} aria-hidden="true" />
-              Download APK
+            <a href={webAppUrl} target="_blank" rel="noreferrer" className={primaryBtn}>
+              <ArrowUpRight size={20} aria-hidden="true" />
+              Continue with web
             </a>
             <a href={playStoreUrl} target="_blank" rel="noreferrer" className={secondaryBtn}>
               <ArrowUpRight size={20} aria-hidden="true" />
@@ -322,14 +285,14 @@ const Download = () => {
       >
         <div className="mx-auto flex max-w-md gap-2">
           <a
-            href={apkUrl}
-            download
-            rel="noopener"
+            href={webAppUrl}
+            target="_blank"
+            rel="noreferrer"
             tabIndex={showBar ? 0 : -1}
             className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-full bg-emerald-400 px-4 text-sm font-black text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-indigo-950"
           >
-            <DownloadIcon size={18} aria-hidden="true" />
-            Download APK
+            <ArrowUpRight size={18} aria-hidden="true" />
+            Continue with web
           </a>
           <a
             href={playStoreUrl}
